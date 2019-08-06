@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "商品页面",
+  "usingComponents": {
+    "my_shops": "../shops/shops"
+  }
+}

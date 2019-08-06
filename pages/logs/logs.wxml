@@ -1,0 +1,121 @@
+<!-- logs.wxml -->
+<view class="container log-list">
+  <!-- 头部 -->
+  <view class="header">
+    <!-- 头部浅色 -->
+    <view class="header_top">
+      <image class="he_lf" src="../../img/icona_03.jpg"></image>
+      <view class="he_mid">
+        <view class="he_mid_top">
+          <!-- <view class="he_pp">品牌</view> -->
+          <image class="he_pp" src="../../img/brand@2x.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+          <view class="he_text">粥品香坊</view>
+        </view>
+        <!-- 送达 -->
+        <view class="he_sd">蜂鸟专送 / 38分钟送达</view>
+        <!-- 满减 -->
+        <view class="he_mj">
+          <image class="he_mj_lf" src="../../img/decrease_1@2x.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+          <view class="he_mj_rg">在线支付满28减5，满50减10</view>
+        </view>
+      </view>
+      <view class="he_rf">5个  ></view>
+    </view>
+    <!-- 头部深色 -->
+    <view class="header_fot">
+      <image class="he_fot_img" src="../../img/bulletin@2x.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      <view class="he_fot_text" hover-class="none" hover-stop-propagation="false">
+        粥品香坊其烹饪粥料的秘方源于中国千年古法，再融合现代制作工艺粥品香坊其烹饪粥料的秘方源于中国千年古法，再融合现代制作工艺
+      </view>
+      <view class="he_fot_jt" hover-stop-propagation="false">></view>
+    </view>
+  </view>
+  <!-- 头部选择 -->
+  <!-- <view class="xx" hover-class="none" hover-stop-propagation="false"></view> -->
+  <!-- 中心内容 -->
+  <view class="content" hover-stop-propagation="false">
+    <view class="swiper-tab">
+      <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">
+        商品
+      </view>
+      <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">
+        评价
+      </view>
+      <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">
+        商家
+      </view>
+    </view>
+    <swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
+      <!-- 商品 -->
+      <swiper-item class="goods_">
+        <scroll-view class="left" scroll-y>
+          <view wx:for="{{left}}" class="leftlist {{index==_click?'yes':''}}" data-i="{{index}}" bindtap="tap">
+            {{item.name}}
+          </view>
+        </scroll-view>
+        <scroll-view class="right" scroll-y bindscroll="scroll" scroll-into-view="{{toView}}">
+          <view id="{{item.id}}" wx:for="{{right}}">
+            <view class="title">
+              <span>{{item.name}}</span>
+            </view>
+            <view class="li" wx:for="{{item.foods}}">
+              <image src="{{item.icon}}"></image>
+              <view class="li_main" hover-stop-propagation="false">
+                <text class="li_title" selectable="false" space="false" decode="false">
+                  {{item.name}}
+                </text>
+                <view class="li_lx" selectable="false" space="false" decode="false">
+                  {{item.description}}
+                </view>
+                <view class="li_lx" selectable="false" space="false" decode="false">
+                  月售{{item.sellCount}}份
+                  <span>好评率{{item.rating}}%</span>
+                </view>
+                <!-- 商品操作 -->
+                <view class="li_cz" hover-stop-propagation="false">
+                  <!-- 价格 -->
+                  <view class="li_price" hover-stop-propagation="false">
+                    <view class="li_span1" hover-stop-propagation="false">￥{{item.price}}</view>
+                    <view class="li_span2" hover-stop-propagation="false" wx:if="{{item.oldPrice}}">
+                      ￥{{item.oldPrice}}
+                    </view>
+                  </view>
+                  <!-- 数量加减 -->
+                  <view class="li_num" hover-stop-propagation="false">
+                    <view class="li_jian" hover-stop-propagation="false">-</view>
+                    <view class="li_jian" hover-stop-propagation="false">0</view>
+                    <view class="li_jian" hover-stop-propagation="false">+</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </swiper-item>
+      <!-- 评价 -->
+      <swiper-item>
+        <view>评价</view>
+      </swiper-item>
+      <!-- 商家 -->
+      <swiper-item>
+        <!-- 商家这里拆分组件 -->
+        <my_shops></my_shops>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 底部购物车 -->
+  <view class="footer" hover-class="none" hover-stop-propagation="false">
+    <!-- 购物车图片 -->
+    <view class="footer_gwc" hover-class="none" hover-stop-propagation="false">
+      <image class="footer_gwcimg" src="../../img/gwc_03.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+    <!-- 金额 -->
+    <view class="footer_money" hover-class="none" hover-stop-propagation="false">￥0</view>
+    <!-- 线条 -->
+    <view class="footer_xt" hover-class="none" hover-stop-propagation="false"></view>
+    <!-- 配送费 -->
+    <view class="footer_psf" hover-class="none" hover-stop-propagation="false">另需配送费4元</view>
+    <!-- 起送 -->
+    <view class="footer_qs" hover-class="none" hover-stop-propagation="false">￥20起送</view>
+  </view>
+</view>

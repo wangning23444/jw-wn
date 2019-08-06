@@ -1,0 +1,356 @@
+page {
+  height: 100%;
+}
+
+.log-list {
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  background: rgba(7, 17, 27, .5);
+}
+
+/* 头部上一部分 */
+.header_top {
+  width: 100%;
+  height: 128rpx;
+  display: flex;
+  margin: 48rpx 0 36rpx;
+}
+
+/* 头部左边 */
+.he_lf {
+  width: 128rpx;
+  height: 128rpx;
+  background: red;
+  display: flex;
+  border-radius: 4rpx;
+  margin: 0 32rpx 0 48rpx;
+}
+
+.he_mid_top {
+  display: flex;
+
+}
+
+/* 品牌 */
+.he_pp {
+  width: 60rpx;
+  margin: 4rpx 12rpx 0 0;
+  height: 40rpx;
+}
+
+/* 文本 */
+.he_text {
+  font-size: 32rpx;
+  color: rgb(225, 225, 225);
+  font-weight: bold;
+  line-height: 36rpx;
+}
+
+/* 送达 */
+.he_sd {
+  color: rgb(225, 225, 225);
+  font-weight: 200rpx;
+  line-height: 24rpx;
+  margin: 16rpx 0 20rpx;
+  font-size: 28rpx;
+}
+
+/* 满减 */
+.he_mj {
+  display: flex;
+  font-size: 24rpx;
+}
+
+.he_mj_lf {
+  width: 30rpx;
+  height: 28rpx;
+  margin: 0 8rpx 4rpx 0;
+}
+
+.he_mj_rg {
+  font-size: 24rpx;
+  color: rgb(225, 225, 225);
+  font-weight: 200;
+  line-height: 28rpx;
+}
+
+/* 右边 */
+.he_rf {
+  display: flex;
+  height: 20rpx;
+  padding: 14rpx 16rpx;
+  font-size: 24rpx;
+  color: rgb(225, 225, 225);
+  font-weight: 200;
+  line-height: 20rpx;
+  background: rgba(0, 0, 0, .2);
+  border-radius: 50rpx;
+  margin-top: 70rpx;
+  margin-left: 80rpx;
+}
+
+
+/* 头部下一部分 */
+.header_fot {
+  width: 100%;
+  height: 56rpx;
+  background: rgba(0, 0, 0, .2);
+  display: flex;
+  align-items: center;
+  line-height: 56rpx;
+  color: rgb(225, 225, 225);
+}
+
+.he_fot_img {
+  width: 50rpx;
+  height: 30rpx;
+  margin: auto 8rpx auto 24rpx;
+}
+
+.he_fot_text {
+  width: 80%;
+  font-size: 26rpx;
+  font-weight: 200;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.he_fot_jt {
+  margin-left: 20rpx;
+  font-size: 22rpx;
+}
+
+/* 中心内容 */
+.content {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  overflow: auto;
+}
+
+
+
+/* 轮播选择父级 */
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid #ccc;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+/* 子级 */
+.swiper-tab-item {
+  width: 30%;
+  color: #434343;
+}
+
+/* 选中样式 */
+.active {
+  color: #F65959;
+  border-bottom: 4rpx solid #F65959;
+}
+
+/* 楼梯选项 */
+swiper {
+  height: 100%;
+}
+
+.goods_ {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.left {
+  height: 100%;
+  width: 25%;
+  display: inline-block;
+  background: #fff;
+  border-right: 1px solid #eee;
+}
+
+.leftlist {
+  font-size: 26rpx;
+  padding: 10rpx;
+  height: 98rpx;
+  line-height: 98rpx;
+  background: #f3f5f7;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.right {
+  height: 100%;
+  width: 75%;
+  display: inline-block;
+  background: #fff;
+
+}
+
+.title {
+  background: #f3f5f7;
+  height: 52rpx;
+  line-height: 52rpx;
+  padding: 20rpx 0;
+  font-size: 24rpx;
+}
+
+.title span {
+  margin-left: 7%;
+  color: rgb(147, 153, 159)
+}
+
+.line {
+  width: 15px;
+  height: 1px;
+  background: #ddd;
+  display: inline-block;
+  vertical-align: super;
+  margin: 0 15px;
+}
+
+.li {
+  height: 150rpx;
+  width: 88%;
+  display: flex;
+  padding: 36rpx 0;
+  margin: 0 36rpx;
+}
+
+.li image {
+
+  width: 115rpx;
+  height: 115rpx;
+}
+
+/* 商品介绍 */
+.li .li_main {
+  height: 115rpx;
+  width: 80%;
+  margin-left: 20rpx;
+}
+
+/* 商品标题 */
+.li_title {
+  font-size: 28rpx;
+  color: rgb(7, 17, 27);
+  line-height: 28rpx;
+}
+
+/* 商品介绍 */
+.li_lx {
+  font-size: 20rpx;
+  color: rgb(147, 153, 159);
+  line-height: 20rpx;
+  margin-top: 16rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* 商品操作 */
+.li_cz {
+  display: flex;
+}
+
+/* 商品价格 */
+
+.li_price {
+  display: flex;
+  margin-top: 16rpx;
+}
+
+.li_span1 {
+  font-size: 20/28rpx;
+  font-weight: normal;
+  line-height: 48rpx;
+  margin-right: 16rpx;
+  color: #f01414
+}
+
+.li_span2 {
+  font-size: 20rpx;
+  color: rgb(147, 153, 159)
+}
+
+/* 数量加减 */
+.li_num {
+  margin-top: 16rpx;
+  display: flex;
+  margin-left: 140rpx;
+}
+
+.yes {
+  background: #fff;
+  font-size: 24rpx;
+}
+
+/* 底部购物车 */
+.footer {
+  width: 100%;
+  height: 100rpx;
+  background: #141d27;
+  display: flex;
+  justify-content: space-between;
+  color: #919396;
+  align-items: center;
+  font-weight: 700;
+  font-size: 28rpx;
+}
+
+
+/* 购物车图片 */
+
+.footer_gwc {
+  width: 110rpx;
+  height: 110rpx;
+  background: rgba(0, 0, 0, .6);
+  border-radius: 50%;
+  display: flex;
+  margin: 0rpx 36rpx 18rpx 36rpx;
+
+}
+
+.footer_gwcimg {
+  width: 80rpx;
+  height: 80rpx;
+  margin: auto;
+  background: rgba(0, 0, 0, .6);
+}
+
+/* 购物车线条 */
+
+.footer_xt {
+  width: 1rpx;
+  height: 40rpx;
+  background: rgba(255, 255, 255, .1);
+}
+
+/* 购物车配送费 */
+.footer_psf {
+  font-weight: normal;
+  font-size: 24rpx;
+}
+
+/* 购物车起送 */
+.footer_qs {
+  width: 25%;
+  background: #2b333b;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}

@@ -1,0 +1,25 @@
+<!-- pages/shops/shops.wxml -->
+<view class="shops_first" hover-class="none" hover-stop-propagation="false">
+  <view class="sf sf_one" hover-class="none" hover-stop-propagation="false">
+    <!-- 左边 -->
+    <view class="sf_one_lf" hover-class="none" hover-stop-propagation="false">
+      <text class="sf_one_lf_title" selectable="false" space="false" decode="false">粥品香坊(大运村)</text>
+      <view class="sf_one_lf_main" hover-class="none" hover-stop-propagation="false">
+        <view class="sf_one_lf_main_img" hover-class="none" hover-stop-propagation="false">
+          <image class="img_star" src="../../img/star24_on@3x.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+          <image class="img_star" src="../../img/star24_on@3x.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+          <image class="img_star" src="../../img/star24_on@3x.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+          <image class="img_star" src="../../img/star24_on@3x.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+          <image class="img_star" src="../../img/star24_off@2x.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+          <text class="img_text1" selectable="false" space="false" decode="false">(661)</text>
+          <text class="img_text" selectable="false" space="false" decode="false">月售360单</text>
+        </view>
+      </view>
+    </view>
+    <!-- 右边 -->
+    <view class="sf_one_rf" hover-class="none" hover-stop-propagation="false">
+      <image class="sf_one_rf_img" src="../../img/xhx_03.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+  </view>
+  <view class="sf sf_two" hover-class="none" hover-stop-propagation="false"></view>
+</view>
